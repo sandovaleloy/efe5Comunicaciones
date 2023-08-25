@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/Main_doble.css";
+// import Main from "./Main";
 
-const Main_doble = () => {
+const Main_doble = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
   return (
     <div className="container_iframeYoutube">
       <div className="container_iframeYoutube_iframe">
@@ -89,6 +103,15 @@ const Main_doble = () => {
           de Becerril, Cesar.
         </p>
       </div>
+      <div className="carousel">
+      <button onClick={goToPrevious} className="carousel-button_left ">
+      <i class='bx bxs-chevron-left'></i>
+      </button>
+      <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
+      <button onClick={goToNext} className="carousel-button_rigth">
+      <i className='bx bxs-chevron-right'></i>
+      </button>
+    </div>
     </div>
   );
 };

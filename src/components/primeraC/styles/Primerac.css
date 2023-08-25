@@ -1,0 +1,110 @@
+.container_primerac {
+    /* margin-top: 50px; */
+    height: 100vh;
+}
+
+.container_div_principal {
+    display: flex;
+    height: 40px;
+    font-size: 20px;
+    min-width: 315px;
+    width: 40%;
+    border: 1px solid rgb(221, 221, 221);
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #263649;
+    color: white;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+.container_div {
+    display: flex;
+    height: 40px;
+    font-size: 20px;
+    min-width: 315px;
+    width: 40%;
+    align-items: center;
+    border: 1px solid rgb(221, 221, 221);
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+.container_div1 {
+    display: flex;
+    gap: 30px;
+    padding: 5px;
+}
+
+.h6_pos {
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container_iframe_primerac {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-bottom: 120px; */
+}
+
+.iframe_primeraC {
+    /* margin-bottom: 60px; */
+    border: none;
+    width: 560px;
+    height: 314px;
+    padding: 5px;
+}
+
+@media  (min-width: 280px) {
+    .container_primerac {
+        margin-top: 220px;
+    }
+}
+@media  (min-width: 320px) {
+    .container_primerac {
+        margin-top: 250px;
+    }
+}
+@media  (min-width: 360px) {
+    .container_primerac {
+        margin-top: 300px;
+    }
+}
+@media  (min-width: 415px) {
+    .container_primerac {
+        margin-top: 350px;
+    }
+    
+}
+@media  (min-width: 517px) {
+    .container_primerac {
+        margin-top: 400px;
+    }
+    
+}
+
+@media  (min-width: 320px) {
+    .iframe_primeraC {
+        margin-bottom: -140px;
+    }
+}
+@media  (max-width: 407px) {
+    .iframe_primeraC {
+        margin-bottom: -100px;
+    }
+}
+@media  (max-width: 478px) {
+    .iframe_primeraC {
+        margin-bottom: -60px;
+    }
+}
+@media  (min-width: 500px) {
+    .iframe_primeraC {
+        margin-bottom: 50px;
+    }
+}

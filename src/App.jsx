@@ -1,10 +1,12 @@
-// import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/footer/Footer";
 import NavbarLink from "./components/layout/NavbarLink";
 import Main from "./components/main/Main";
 import Main_doble from "./components/main/Main_doble";
+import PrimeraC from './components/primeraC/PrimeraC';
+import Noticias from './components/noticias/Noticias';
 
 function App() {
   const images = [
@@ -18,13 +20,12 @@ function App() {
     <div className="container_principal">
       <Navbar />
       <NavbarLink />
-      <Main_doble />
-      <Main images={images} />
-      {/* <Routes>
-        <Route path='/' element={<h2></h2>}/>
-        <Route path='/contact' element={<h2>contact</h2>}/>
-        <Route path='/about' element={<h2>about</h2>}/>
-      </Routes> */}
+      <Routes>
+        <Route path='/' element={<Main_doble images={images}/>}/>
+        {/* <Route path='/' element={<Main images={images} />}/> */}
+        <Route path='/primerac' element={<PrimeraC />}/>
+        <Route path='/noticias' element={<Noticias />}/>
+      </Routes>
       <Footer />
     </div>
   );
