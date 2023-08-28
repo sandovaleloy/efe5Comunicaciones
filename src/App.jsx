@@ -21,7 +21,7 @@ function App() {
       <NavbarLink />
       <Routes>
         <Route path='/' element={<Main_doble images={images}/>}/>
-        {/* <Route path='/primerac' element={<Primerac/>}/> */}
+        <Route path='/primerac' element={<Primerac/>}/>
         {/* <Route path='/noticias' element={<Noticias />}/> */}
       </Routes>
       <Footer />

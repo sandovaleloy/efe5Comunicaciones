@@ -23,11 +23,11 @@ const Navbar = () => {
       >
         <i className="icon_redes3 bx bxl-youtube"></i>
       </Link>
-      {/* <section className="link_routers">
+      <section className="link_routers">
         <Link className="link_router" to="/"> Home</Link>
         <Link className="link_router" to="/primerac"> T. Primera C</Link>
-        <Link className="link_router" to="/noticias"> Noticias</Link>
-      </section> */}
+        {/* <Link className="link_router" to="/noticias"> Noticias</Link> */}
+      </section>
     </div>
   );
 };
