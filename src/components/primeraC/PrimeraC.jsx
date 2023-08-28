@@ -1,7 +1,7 @@
 import React from "react";
-import "./styles/primerac.css";
+import "./styles/Primerac.css";
 
-const PrimeraC = () => {
+const Primerac = () => {
   return (
     <section className="container_primerac">
       <div className="container_iframe_primerac">
@@ -151,4 +151,4 @@ const PrimeraC = () => {
   );
 };
 
-export default PrimeraC;
+export default Primerac;
