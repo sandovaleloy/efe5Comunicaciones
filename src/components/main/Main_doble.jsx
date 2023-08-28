@@ -105,7 +105,7 @@ const Main_doble = ({ images }) => {
       </div>
       <div className="carousel">
       <button onClick={goToPrevious} className="carousel-button_left ">
-      <i class='bx bxs-chevron-left'></i>
+      <i className='bx bxs-chevron-left'></i>
       </button>
       <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
       <button onClick={goToNext} className="carousel-button_rigth">
