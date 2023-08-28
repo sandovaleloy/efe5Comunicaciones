@@ -5,7 +5,7 @@ import Footer from "./components/footer/Footer";
 import NavbarLink from "./components/layout/NavbarLink";
 import Main_doble from "./components/main/Main_doble";
 // import Noticias from './components/noticias/Noticias';
-// import Primerac from './components/primeraC/PrimeraC';
+import Primerc from './components/primeraC/Primerc';
 
 function App() {
   const images = [
@@ -21,7 +21,7 @@ function App() {
       <NavbarLink />
       <Routes>
         <Route path='/' element={<Main_doble images={images}/>}/>
-        <Route path='/primerac' element={<Primerac/>}/>
+        <Route path='/primerac' element={<Primerc/>}/>
         {/* <Route path='/noticias' element={<Noticias />}/> */}
       </Routes>
       <Footer />
